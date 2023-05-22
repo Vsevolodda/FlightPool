@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>booking</title>
+	<link rel="stylesheet" type="text/css" href="css/1.css">
+	
+</head>
+<body>
+		<div class="conteiner">
+			<header class="header">	
+				<div class="test-0-logo">
+				<img src="image/logo.svg" style="width:60px;height:60px; margin-top:0px; padding-left: 5px;"alt="Логотип"> 
+				</div>
+				<a href="./index.html" style="position:relative;right:80px;margin-left:50px;padding-top: 5px;font-family:cursive;color:orangered;font-weight:bold;font-size: 30px;"><b>Flightpool - нас выбирают</b></a>
+			
+				<a href="#Akt"class="test-0-nav-1" style="font-family:cursive;color:orangered;font-weight:bold;font-size: 30px"><b>Акции</b></a>
+				
+			
+				<input type="text"class="test-0-nav-2" placeholder="Поиск">
+		
+				
+				<a href="./register.html"class="test-0-nav-4"><b>Личный кабинет</b></a>
+			</header>
+		
+			<h1 style="font-family:cursive;color:orangered;font-weight:bold;width: 220px;">Бронирование</h1>
+			<p class="test-5-fc" style="font-family:cursive;color:darkorange;font-weight:bold;font-size: 20px;margin: 0 auto;text-align: center;">Рейс №218</p>
+		
+		<div class="bron">
+				
+				<div class="vilet">
+					<h3>Вылет:</h3>
+					<div class="test-5-fс">Номер рейса: 25</div>
+					<div class="test-5-fcity">Город Отправления: Москва</div>
+					<div class="test-5-from">Аэропорт вылета: Внуково</div>
+					<div class="test-5-dd">Дата вылета: 29.05.23</div>
+					<div class="test-5-dt">Время вылета: 16:00</div>
+				</div>
+				<div style="border: 2px solid black;"></div>
+				<div class="prilet">
+					<h3>Прилет:</h3>
+					<div class="test-5-tcity">Город Назначения: Лондон</div>
+					<div class="test-5-to">Аэропот: Хитроу</div>
+					<div class="test-5-dq">Дата прилета: 29.05.23</div>
+					<div class="test-5-at">Время прилета: 23:00</div>
+					<div class="test-5-fp">Стоимость:7000 рублей</div>
+				</div>
+		</div>
+					<h1 style="font-family:cursive;color:orangered;font-weight:bold;margin: 0 auto;text-align: center;">Данные о пассажирах</h1>
+		<div class="dannie">
+		     		<form class="form" action="./search.html">
+							Имя
+							<br>
+     						<input required type="text" class="test-5-name" placeholder="Введите имя">
+     						<br>
+     						Фамилия
+     						<br>
+     						<input required type="text" class="test-5-last"placeholder="Введите фамилию"> 
+     						<br>    		
+     						Дата рождения
+     						<br>
+     						<input required type="date" class="test-5-dob">
+     						<br>
+     						Номер документа
+     						<br>
+     						<input required type="text" class="test-5-doc"placeholder="Введите номер">
+     						<br>
+							Количество пассажиров: 
+							<input class="test-5-add-remove test-input" id="odin1" type="number" required	 value="1" style="width:50px; text-align: center;" oninput="kalkulyator()"><hr>
+							Итоговая стоимость: <output	id="rezultat2" class="test-5-price"><em><b>7000</b></em></output><hr>
+     						<button class="test-5-book">Оформить</button>	
+     				</form>	
+     				<br>
+		</div>
+
+			<footer class="footr">
+								<div class="test-0-phone" style="margin-left: 20px;padding-left: 25px;">Наш Телефон: “8 (800) 100-10-10”</div>
+								<div class="email-foot" style="left:0px;color: white;">Почта:flightpool@mail.ru</div>
+								<div class="links">
+									<a class="link" href="./register.html" style="margin-left:100px;color: white;"><em>Личный Кабинет</em></a>
+									<a class="link" href="#"style="margin-left:50px;color: white;"><em>Наши контакты:</em></a>
+								</div>
+								<div class="icon-foot">
+									<a href="#"><img src="./image/vk.png"style="width:25px;height:25px; margin-top:9px "alt="Соцсеть"></a>
+									<a href="#"><img src="./image/telegram.png"style="width:25px;height:25px; margin-top:9px "alt="Соцсеть"></a>
+								</div>
+			</footer>
+	</div>
+
+	<script type="text/javascript">
+		function kalkulyator(){
+			var rezultat2=7000;
+			rezultat2*=parseFloat(document.getElementById('odin1').value);
+			document.getElementById('rezultat2').innerHTML=rezultat2;
+		}</script>	
+</body>
+</html>
